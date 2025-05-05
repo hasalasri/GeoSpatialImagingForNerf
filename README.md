@@ -3,7 +3,7 @@
 
 ---
 
-## ✨ Overview
+## Overview
 A lightweight Python pipeline that reconstructs a **sparse 3‑D point cloud** and camera poses from a set of overlapping photographs *optionally* enhanced with per‑image IMU orientation/position data.  
 The code produces COLMAP‑compatible `cameras.txt`, `images.txt`, and `points3D.txt` files so you can continue with dense reconstruction or NeRF training.
 
@@ -18,11 +18,8 @@ The code produces COLMAP‑compatible `cameras.txt`, `images.txt`, and `points3D
 | OpenCV (main modules + contrib) | 4.10 |
 | tqdm *(optional CLI progress)* | 4.66 |
 
-> ⚠️ **Windows users**: install OpenCV with `--extra-index-url` to avoid missing wheels.
 
----
-
-## 🚀 Quick‑start installation
+## installation
 ```bash
 # 1) create and activate a virtual environment (recommended)
 python -m venv venv
