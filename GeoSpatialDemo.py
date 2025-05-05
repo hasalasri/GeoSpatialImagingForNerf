@@ -27,7 +27,7 @@ MODEL_NAME = "Intel/dpt-hybrid-midas"
 
 haar_base_path = cv2.data.haarcascades
 face_cascade_path = os.path.join(haar_base_path, 'haarcascade_frontalface_default.xml')
-plate_cascade_path = os.path.join(haar_base_path, 'haarcascade_license_plate_rus_16stages.xml') # Another option
+plate_cascade_path = os.path.join(haar_base_path, 'haarcascade_license_plate_rus_16stages.xml') 
 
 face_cascade = None
 plate_cascade = None
@@ -74,7 +74,7 @@ def load_model_worker():
 
 def start_model_load():
     """Starts loading the model in a background thread."""
-    thread = threading.Thread(target=load_model_worker, daemon=True) # daemon=True allows closing app even if thread runs
+    thread = threading.Thread(target=load_model_worker, daemon=True) 
     thread.start()
 
 
@@ -121,7 +121,7 @@ def apply_colormap(depth_image_pil):
     if depth_image_pil is None:
         return None
     depth_cv = np.array(depth_image_pil)
-    colored_depth = cv2.applyColorMap(depth_cv, cv2.COLORMAP_MAGMA) # Changed colormap
+    colored_depth = cv2.applyColorMap(depth_cv, cv2.COLORMAP_MAGMA) 
     colored_depth_rgb = cv2.cvtColor(colored_depth, cv2.COLOR_BGR2RGB)
     return Image.fromarray(colored_depth_rgb)
 
