@@ -80,7 +80,7 @@ Import the TXT model in **COLMAP** or any compatible viewer.
 ### Features
 * Tkinter GUI to load an image.
 * Depth estimation with **Intel DPT‑Hybrid (MiDaS Small 2.1)** via `transformers`.
-* Coloured depth‑map visualisation.
+* Coloured depth‑map visualization.
 * Privacy filter: Gaussian‑blur faces & licence plates (OpenCV Haar cascades).
 
 ### Dependencies
